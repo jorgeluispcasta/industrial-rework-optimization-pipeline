@@ -11,6 +11,7 @@ This repository demonstrates a modern data stack transition from raw plant data 
 * **Data Generation & Ingestion (Mocked Cloud):** `Python` (pandas, numpy) simulating IoT sensors and ERP logs, built to integrate with AWS S3 / Azure Data Lake.
 * **Big Data Processing (ETL):** `Databricks` / `PySpark` for massive data cleaning, mass balance calculations, and Delta Lake storage.
 * **Data Modeling & Analytics:** `Snowflake` / `Advanced SQL` (CTEs, Window Functions) to build a Kimball Star Schema and compute running financial impacts.
+* * **BI & Data Visualization:** `Power BI` (DAX) modeling cumulative cost impacts and space-time capacity loss categories.
 
 ## Repository Structure
 
@@ -23,7 +24,7 @@ This repository demonstrates a modern data stack transition from raw plant data 
 3. `/snowflake_sql`
    * `01_star_schema_and_analytics.sql`: Snowflake SQL script establishing the analytical Data Warehouse. Includes dimensional modeling (Star Schema) and advanced analytical views calculating cumulative financial loss and RoST impact categories.
 
-## Key Technical Skills Highlighted
-* Distributed data processing with PySpark.
-* Cloud Data Warehousing and analytical modeling in Snowflake.
-* Translation of complex physical chemistry and engineering processes into data architecture.
+4. `/powerbi_dashboard`
+   * `rost_dashboard_preview.png`: Executive dashboard design preview.
+   * `dax_measures.md`: Production-ready DAX expressions used for time-intelligence calculations and dynamic conditional formatting.
+
